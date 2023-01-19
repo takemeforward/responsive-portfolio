@@ -9,27 +9,31 @@
 	/*text-align: center;*/
 }
 body{
-/*	margin: 5%;*/
-	font-family: 'Noto Sans', sans-serif;
+	bac
+	font-family: 'Roboto', sans-serif;
 	width: 100%;
 	height: 100%;
 }
-#home{
-/*	#ff4c68*/
-	background-color: grey;
+.nav-bar{
+	width: 80%;
+	margin: 0 auto;
 }
-
-.navbar-brand{
-	padding-left: 5%;
+.nav-container{
+	background-color: #222211;
 }
-.collapse{
-	padding-right: 10%;
+.nav-link{
+	text-decoration: none;
+	color: white !important;
 }
 .nav-item{
 	padding: 0 1rem;
 }
 .nav-link{
 	font-size: 1.3rem;
+}
+#home{
+/*	#c3c388 #b2b266*/
+background-color: #c3c388;
 }
 .home-container{
 	width: 100%;
@@ -38,22 +42,18 @@ body{
 	justify-content: center;
 }
 .text-container{
-/*	border: 2px solid blue;*/
 	width: 55%;
 	padding: 4% 8%;
-	text-align: left;
-	color: floralwhite;
-	/*display: flex;
-	flex-direction: column;
-	justify-content: space-between;*/
+	text-align: center;
+	color: black;
 }
-.hello+.name+.profession{
+.hello+.name+.profession+.about-text{
 	margin-top: 2rem;
 }
 .hello{
-/*	border:2px solid red;*/
-	font-size: 4.5rem;
-	font-weight: 700;
+	margin-top: 0;
+	font-size: 4.6em;
+	font-weight: 900;
 }
 .name{
 	font-size: 3.5em;
@@ -61,70 +61,55 @@ body{
 }
 .profession{
 	font-size: 2.5rem;
-	margin-bottom: 1em;
 }
 .profession:hover{
 	color: green;
 }
-.image-container{
-	width: 35vw;
-/*	height: 80vh;*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/*background-color: yellow;*/
+.about-text{
+	text-align: justify;
+	font-size: 1.16rem;
+	line-height: 1.7;
+	font-weight: 400;
 }
 .profile-image{
  width: 30%;
  align-self: flex-end;
-
 }
-.profile-image:hover{
-	opacity: .9;
-}
-.about-text{
-	font-size: 110%;
-	line-height: 1.7;
-	font-weight: 400;
-}
-.heading{
-	margin: 2% auto;
-	background-color: lightgrey;
+.heading-primary{
+	margin: 1em 0;
+	background-color: #55552b;
+	color: white;
+	padding: .2em 0;
 	text-align: center;
 	font-weight: 600;
 	font-size: 2rem;
 }
 #education{
-	background-color: #f2f2f2;
+	background-color: #c3c388;
 }
 .education-container{
-	gap: 1rem;
+	gap: 1em;
 	padding: 4% 8%;
-	display: flex;
-	justify-content: space-between;
-}
-.education1,.education2,.education3{
-/*	border: 3px dotted green;*/
-	padding: 4%;
-	margin: 10px auto;
-	background-color: white;
-	border-radius: 5%;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), 0 8px 12px 0 rgba(0,0,0,0.15);
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 .education-description{
 	padding: 10px;
 }
+.education{
+
+}
 /*skills part*/
 #skills{
-	background-color: #f2f2f2;
-	padding: 2%;
+	background-color: #c3c388;
 
 }
 .skill-container{
 	display: flex;
 	flex-direction: row;
-	gap: 1.5%;
-/*	padding: 2em;*/
+	gap: 1.5em;
+	margin: 2em;
 	justify-content: space-between;
 	padding: 4% 0%;
 /*	border-radius: 50px;*/
@@ -145,7 +130,7 @@ body{
 }
 
 #projects{
-	background-color: #f2f2f2;
+	background-color: #c3c388;
 }
 .project-container{
 	display: flex;
@@ -154,10 +139,7 @@ body{
 	padding: 2%;
 	padding-left: 8%;
 }
-.projectrow{
-}
 .project{
-/*	width: 30%;*/
 	background-color: white;
 	border-radius: 15px;
 	padding: 2%;
@@ -190,48 +172,19 @@ span{
 footer{
 	padding: 2em;
 	text-align: center;
-	background-color: lightgrey;
+	background-color: #1a1300;
+	color: white;
 
 }
 .social{
 	zoom: 130%;
 	padding: 1rem 1rem;
-}
-
-
-/*contact me form*/
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 4px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: grey;
-  color: white;
-  padding: 8px 6px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-a[type=button] {
-	border-radius: 10px;
-/*	text-decoration: none;*/
 	color: white;
-	padding: 2px 4px;
-/*	background-color: green;*/
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.15), 0 6px 20px 0 rgba(0,0,0,0.15);
-
 }
-
+.social:hover{
+	color: hotpink;
+	cursor: pointer;
+}
 .container {
 	text-align: left;
 	font-size: 13px;
@@ -241,7 +194,7 @@ a[type=button] {
   border-radius: 5px;
   background-color: #f2f2f2;
   opacity: .9;
-  padding: 6px;
+  padding: 4px;
 }
 
 @media (max-width: 600px)
@@ -279,6 +232,9 @@ a[type=button] {
 	}
 	.project{
 		width: 100%;
+	}
+	.button{
+		padding: 4px 12px;
 	}
 
 }
